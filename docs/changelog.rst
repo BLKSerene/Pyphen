@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-Version 0.18.0
+Version 0.18.1
 --------------
 
 Released on 2026-08-14.
