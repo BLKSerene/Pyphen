@@ -10,7 +10,8 @@ jobs:
   doconfly:
     name: doconfly job
     runs-on: ubuntu-latest
-    with:
+    env:
       PASSWORD: ${{ secrets.DOCONFLY_PASSWORD }}
     steps:
-      - run: curl --user "doconfly:$PASSWORD" "https://doconfly.courtbouillon.org/$GITHUB_REPOSITORY/$GITHUB_REF"
+      - run: |
+          curl --user "doconfly:$PASSWORD" "https://doconfly.courtbouillon.org/$GITHUB_REPOSITORY/$GITHUB_REF"
